@@ -52,9 +52,9 @@ public class DateSorter {
                 datesWithoutR.add(date);
             }
         }
-        datesWithR.sort(reverseOrder());
+        sort(datesWithR);
         datesWithoutR.trimToSize();
-        sort(datesWithoutR);
+        datesWithoutR.sort(reverseOrder());
         datesWithR.addAll(datesWithoutR);
 
         return datesWithR;
